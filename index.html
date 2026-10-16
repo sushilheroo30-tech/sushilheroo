@@ -3,294 +3,286 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Sushil Tamang | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
+<meta name="theme-color" content="#fff1f6">
+<title>For sanuuuhhhh ♡</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+:root{
+  --pink:#f4a7c2;--rose:#c45b83;--deep:#994366;--cream:#fffaf7;
+  --pale:#fff0f5;--line:#f4d2df;--ink:#624252;--muted:#9c7889;
+  --shadow:0 18px 50px rgba(160,75,110,.12)
 }
-
-body{
-background:#090909;
-color:white;
-overflow-x:hidden;
-}
-
-body::before{
-content:"";
-position:fixed;
-width:600px;
-height:600px;
-background:#ff000055;
-filter:blur(150px);
-top:-250px;
-right:-200px;
-z-index:-1;
-animation:move 8s infinite alternate;
-}
-
-@keyframes move{
-to{
-transform:translate(-150px,150px);
-}
-}
-
-nav{
-position:fixed;
-width:100%;
-padding:20px 10%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.55);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-.logo{
-font-size:30px;
-font-weight:700;
-color:#ff3b3b;
-}
-
-nav ul{
-display:flex;
-gap:35px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ff3b3b;
-}
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:70px;
-color:#ff3b3b;
-text-shadow:0 0 25px red;
-}
-
-.hero h2{
-margin-top:20px;
-font-weight:300;
-font-size:26px;
-}
-
-.btn{
-margin-top:40px;
-padding:15px 45px;
-background:#ff3b3b;
-color:white;
-text-decoration:none;
-border-radius:40px;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.1);
-box-shadow:0 0 25px red;
-}
-
-section{
-padding:100px 12%;
-}
-
-.title{
-font-size:42px;
-color:#ff3b3b;
-margin-bottom:35px;
-}
-
-.card{
-background:#151515;
-padding:35px;
-border-radius:20px;
-border:1px solid #333;
-transition:.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-border-color:red;
-box-shadow:0 0 20px rgba(255,0,0,.4);
-}
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-gap:20px;
-margin-top:30px;
-}
-
-.skill{
-background:#202020;
-padding:20px;
-text-align:center;
-border-radius:15px;
-transition:.3s;
-font-weight:600;
-}
-
-.skill:hover{
-background:#ff3b3b;
-transform:scale(1.08);
-}
-
-.quote{
-font-size:28px;
-text-align:center;
-line-height:1.8;
-font-style:italic;
-}
-
-footer{
-padding:40px;
-text-align:center;
-background:#000;
-color:#777;
-}
-
-.hidden{
-opacity:0;
-transform:translateY(60px);
-transition:1s;
-}
-
-.show{
-opacity:1;
-transform:translateY(0);
-}
-
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Trebuchet MS",Arial,sans-serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
+.hero{min-height:100svh;display:grid;place-items:center;padding:24px 16px;position:relative;overflow:hidden;background:radial-gradient(circle at 12% 18%,#ffe0eb 0,transparent 30%),radial-gradient(circle at 88% 78%,#f8d9e6 0,transparent 31%),linear-gradient(145deg,#fffaf7,#fff0f5)}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid #efb9ce66;border-radius:50%;width:340px;height:340px;pointer-events:none}
+.hero:before{top:-210px;right:-100px}.hero:after{bottom:-250px;left:-110px;width:430px;height:430px}
+.float{position:absolute;z-index:1;color:#d77fa0;opacity:.55;user-select:none;animation:drift 7s ease-in-out infinite}
+.f1{left:9%;top:16%;font-size:30px}.f2{right:11%;top:20%;font-size:24px;animation-delay:1s}.f3{left:14%;bottom:15%;font-size:24px;animation-delay:2s}.f4{right:12%;bottom:13%;font-size:34px;animation-delay:3s}
+@keyframes drift{50%{transform:translateY(-15px) rotate(10deg)}}
+@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pop{0%{transform:scale(.7);opacity:0}70%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+.hero-card{z-index:2;position:relative;width:min(100%,660px);text-align:center;padding:clamp(28px,6vw,60px) 24px;background:rgba(255,255,255,.78);border:1px solid #f2d1de;border-radius:32px;box-shadow:var(--shadow);backdrop-filter:blur(8px)}
+.mini-label{text-transform:uppercase;letter-spacing:.19em;font-size:.7rem;color:var(--rose)}
+.big-heart{font-size:2.5rem;display:inline-block;animation:heartbeat 1.8s ease-in-out infinite}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:normal}
+h1{font-size:clamp(2.7rem,10vw,5.3rem);line-height:.99;color:var(--deep);margin:18px 0}
+.hero p{max-width:440px;margin:0 auto 26px;line-height:1.85;color:#866274}
+.btn{border:0;border-radius:999px;padding:14px 23px;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--rose);color:#fff;box-shadow:0 8px 22px #c45b8333}
+.btn-soft{background:#fff0f5;color:var(--deep);border:1px solid #f0c4d5}
+.micro{font-size:.78rem;color:#b18a9b;margin-top:18px}
+main{display:none;max-width:1000px;margin:0 auto;padding:24px 17px 60px;animation:rise .6s ease}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 3px 30px}
+.brand{font:1.15rem Georgia,serif;color:var(--deep)}
+.top-heart{color:var(--rose);font-size:1.25rem}
+section{margin:0 auto 72px}
+.section-head{text-align:center;margin:0 auto 28px}
+.kicker{color:var(--rose);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase}
+.section-title{font-size:clamp(2.1rem,7vw,3.4rem);line-height:1.08;color:var(--deep);margin:9px 0 12px}
+.section-note{max-width:590px;margin:0 auto;color:var(--muted);line-height:1.8}
+.intro-note{max-width:720px;margin:0 auto 54px;padding:23px 24px;border:1px solid var(--line);background:#fff;border-radius:20px;text-align:center;line-height:1.85;box-shadow:0 8px 25px #a94c7410}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px;align-items:start}
+.polaroid{padding:12px 12px 18px;background:#fff;border:1px solid #f4dce5;border-radius:16px;box-shadow:0 12px 28px #9c496b10;transform:rotate(var(--tilt,0deg));transition:transform .25s,box-shadow .25s}
+.polaroid:hover{transform:rotate(0) translateY(-5px);box-shadow:var(--shadow)}
+.photo,.photo-placeholder{display:block;width:100%;aspect-ratio:4/4.4;object-fit:cover;border-radius:10px;background:#fff0f5}
+.photo-placeholder{display:grid;place-items:center;background:linear-gradient(145deg,#ffe2ec,#fff6f8);font-size:2.8rem;color:#d17a9c}
+.caption{font:1.07rem Georgia,serif;text-align:center;color:#8e4c69;margin:15px 5px 0}
+.memory-tag{text-align:center;font-size:.72rem;color:#b18a9b;margin-top:8px}
+.video-card,.letter-card,.reasons-wrap{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(20px,4vw,34px);box-shadow:0 12px 35px #a94c740c}
+.video-stage{min-height:170px;display:grid;place-items:center;background:linear-gradient(135deg,#fff0f5,#fff9f6);border-radius:16px;padding:20px;text-align:center;color:#a65b7b}
+.video-stage video{width:100%;max-height:560px;border-radius:14px}
+.video-emoji{font-size:2.5rem}
+.video-caption{line-height:1.8;color:var(--muted);text-align:center;margin:17px auto 0;max-width:520px}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:13px}
+.reason{border:1px solid #f5d8e3;border-radius:17px;padding:21px;background:#fff9fb;min-height:142px}
+.reason .emoji{font-size:1.45rem}.reason p{line-height:1.65;margin:10px 0 0;color:#8b5b70}
+.letter-card{text-align:center;max-width:760px;margin:auto}
+.envelope{width:min(100%,300px);height:174px;position:relative;overflow:hidden;border:1px solid #edb5ca;border-radius:13px;background:#f5bfd2;box-shadow:0 12px 26px #bd668522;margin:24px auto 18px;display:block}
+.envelope:before{content:"";position:absolute;inset:0;background:#f9d7e2;clip-path:polygon(0 0,100% 0,50% 59%)}
+.envelope:after{content:"💌";position:absolute;inset:0;display:grid;place-items:center;font-size:2.8rem;padding-top:28px}
+.envelope span{position:absolute;bottom:13px;left:0;right:0;color:#984768;z-index:2;font-size:.84rem}
+.letter-text{display:none;text-align:left;white-space:pre-line;line-height:1.95;background:#fff9fb;border:1px solid #f2d3df;border-radius:18px;padding:clamp(20px,4vw,32px);margin-top:22px;animation:rise .5s ease}
+.letter-text.show{display:block}
+.letter-sign{color:var(--deep);font-family:Georgia,serif;font-size:1.1rem}
+.final-card{background:linear-gradient(145deg,#fff0f5,#fff9f6);border:1px solid var(--line);border-radius:28px;text-align:center;padding:clamp(28px,6vw,48px) 20px}
+.final-card .section-title{font-size:clamp(2rem,6vw,3rem)}
+footer{text-align:center;color:#b18a9b;font-size:.8rem;padding:0 12px 20px}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#9c496b;color:#fff;padding:11px 17px;border-radius:999px;box-shadow:var(--shadow);display:none;z-index:9;font-size:.9rem}
+@media(max-width:540px){.topbar{padding-bottom:24px}.float{opacity:.35}.hero-card{border-radius:25px}.polaroid{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 </style>
-
 </head>
-
 <body>
-
-<nav>
-
-<div class="logo">ST</div>
-
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#goal">Goal</a></li>
-</ul>
-
-</nav>
-
-<section class="hero">
-
-<h1>Sushil Tamang</h1>
-
-<h2>Martial Artist • Entrepreneur • Content Creator</h2>
-
-<a href="#about" class="btn">Explore</a>
-
-</section>
-
-<section id="about" class="hidden">
-
-<h2 class="title">About Me</h2>
-
-<div class="card">
-
-<p>
-
-Hello! I'm <b>Sushil Tamang</b>, a passionate martial artist, entrepreneur, and content creator from Nepal.
-
-I've spent more than six years training in Martial Arts, learning discipline, confidence, and perseverance. Outside of training, I enjoy creating cinematic videos, exploring business opportunities, and constantly learning new skills.
-
-I believe success comes from consistency, hard work, and never giving up.
-
-</p>
-
+<div class="hero" id="hero">
+  <span class="float f1">♡</span><span class="float f2">✿</span><span class="float f3">♡</span><span class="float f4">✧</span>
+  <div class="hero-card">
+    <div class="big-heart">💗</div>
+    <div class="mini-label">a little something, just for you</div>
+    <h1>Heyhelo,<br>sanuuuhhhh.</h1>
+    <p>Dherai naskey pani thorai kai banaideko xu it's cringe tara pani timro lagi fuck cringe halka impress gardeko vanamna yo banayera timley po malai maya gardainau ta mah ta garxu</p>
+    <button class="btn btn-primary" id="openBtn">Open your cloths ♡</button>
+    <div class="micro">made with care, just for sofaah</div>
+  </div>
 </div>
 
-</section>
+<main id="content">
+  <div class="topbar">
+    <div class="brand">For sanuuuhhhh ♡</div>
+    <button class="btn btn-soft" id="musicBtn" aria-pressed="false">♫ Play our song</button>
+  </div>
 
-<section id="skills" class="hidden">
+  <div class="intro-note">
+    <span style="font-size:1.5rem">🌷</span><br>
+    I don't need a special occasion to remind you that you're important to me.
+    photo naramro vayo vnyo vani pakh na: <strong>you  are my biggest blessing (mathi geet bajauna milxah hai)</strong>
+  </div>
 
-<h2 class="title">Skills</h2>
+  <section>
+    <div class="section-head"><div class="kicker">little pieces of us</div><h2 class="section-title">Our little world</h2><p class="section-note">A few moments I'd keep in my pocket if I could. chuppainfinityyyyyyy.</p></div>
+    <div class="gallery" id="gallery"></div>
+  </section>
 
-<div class="skills">
+  <section>
+    <div class="section-head"><div class="kicker">video pani herdim na</div><h2 class="section-title">Little memories in motion 🎞</h2><p class="section-note">Some moments that i love.</p></div>
+    <div class="video-card">
+      <div class="video-stage" id="videoStage"><div><div class="video-emoji">🎬 💗 🎬</div><p style="margin:10px 0 0">Your favorite little video goes here</p><p style="font-size:.82rem;margin:7px 0 0">Add an MP4 file using the instructions in README.txt.</p></div></div>
+      <p class="video-caption">A tiny clip, a happy memory, and a reason to smile.</p>
+    </div>
+  </section>
 
-<div class="skill">Martial Arts</div>
+  <section>
+    <div class="section-head"><div class="kicker">things I hope you know</div><h2 class="section-title">Reasons you're special</h2><p class="section-note">These are starter ideas. Change them to real, specific things you appreciate about her.</p></div>
+    <div class="reasons" id="reasons">
+      <article class="reason"><div class="emoji">☀️</div><p>You have a way of making an ordinary day feel a little brighter.</p></article>
+      <article class="reason"><div class="emoji">🌷</div><p>I appreciate the kindness you show in the little things.</p></article>
+      <article class="reason"><div class="emoji">🫶</div><p>emglish ma k avnam ra j hos hamro vibe milxah jasto layoo.</p></article>
+      <article class="reason"><div class="emoji">✨</div><p>timi ekdam ramri xau ani timro ekdam thulo xah mann.</p></article>
+      <article class="reason"><div class="emoji">💌</div><p>timley malai ekdam trust garxau jasto lagyoo.</p></article>
+      <article class="reason"><div class="emoji">♡</div><p>yeti ley pugdaina tha xah jati vaney pani kam nai xah mero sanu lai.</p></article>
+    </div>
+  </section>
 
-<div class="skill">Video Editing</div>
+  <section>
+    <div class="section-head"><div class="kicker">from my heart</div><h2 class="section-title">One last thing…</h2><p class="section-note">Tap the envelope when you're ready. This one's just for you.</p></div>
+    <div class="letter-card">
+      <div style="color:var(--rose);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase">sealed with a little love</div>
+      <button class="envelope" id="letterBtn" aria-label="Open your letter"><span>tap to open ♡</span></button>
+      <div class="letter-text" id="letterText">helo sofia,
 
-<div class="skill">Content Creation</div>
+I wanted to make you something that you could come back to whenever you need a little smile. I know a website can't say everything, but I hope this shows even a small part of how much I appreciate having you in my life.
 
-<div class="skill">Entrepreneurship</div>
+Thank you for the laughs, the little conversations, and the moments that become memories without us even noticing. I appreciate you for who you are—not because you have to be perfect or do anything extra, but simply because you're you.
 
-<div class="skill">HTML & CSS</div>
+(Timlai tha nai hola yo sab mailey lekhna sakdina yo sab AI ley lekhya ho tara ny yo sab mero man kai kura haru hoo ani malai vanna auney tei just loveyou ho tesailey loveyousomuchhh hehehe)feri ai ley complete gaross
 
-<div class="skill">Discipline</div>
+I hope we keep making memories, learning about each other, and finding reasons to laugh together. And on days when things feel a bit heavy, I hope you remember that you matter and that I'm cheering for you.
 
-</div>
+I'm really glad it's sofia💗
 
-</section>
+<span class="letter-sign">With lots of love,<br>your mayalu ♡</span></div>
+      <button class="btn btn-soft" id="copyLetterBtn" style="margin-top:18px">Copy the letter text</button>
+    </div>
+  </section>
 
-<section id="goal" class="hidden">
-
-<h2 class="title">My Goal</h2>
-
-<div class="card">
-
-<p class="quote">
-
-"Every day I train, learn, and create with one purpose—becoming stronger than I was yesterday."
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Sushil Tamang • Built with Passion ❤️
-
-</footer>
+  <section class="final-card">
+    <div style="font-size:2rem;color:var(--rose)">♡ ✧ ♡</div>
+    <h2 class="section-title">This is only the beginning.</h2>
+    <p class="section-note" style="margin-bottom:23px">More little moments, more laughs, and more pages in our story.</p>
+    <button class="btn btn-primary" id="againBtn">Back to the beginning ↑</button>
+  </section>
+  <footer>made with love for sanuuuhhhh 💗</footer>
+</main>
+<div id="toast" role="status" aria-live="polite"></div>
 
 <script>
+// 1) PERSONALIZE PHOTOS: add files to assets/ and update src + caption below.
+// Example: { src: "assets/memory1.jpg", caption: "The day we couldn't stop kissing" }
+const memories = [
+  { src: "assets/memory1.jpg", caption: "A little moment I love ♡" },
+  { src: "assets/memory2.png", caption: "One for the memory book 🌷" },
+  { src: "assets/memory3.png", caption: "yeslai cutest vanam 💗" },
+  { src: "assets/memory4.png", caption: "More memories to come (malai hereko hera na)✨" }
+];
 
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
+// 2) Set a local MP3 for music, e.g. "assets/our-song.mp3".
+// Only use music you have permission to share. Browsers require a tap before audio plays.
+const songPath = "assets/bg music.mp3";
+// 3) Set a short MP4 video path, e.g. "assets/our-moment.mp4".
+const videoPath = "assets/ourvideo.mp4";
+
+const gallery = document.getElementById("gallery");
+memories.forEach((memory, i) => {
+  const card = document.createElement("article");
+  card.className = "polaroid";
+  card.style.setProperty("--tilt", i % 2 ? "1deg" : "-1deg");
+  if (memory.src) {
+    const img = document.createElement("img");
+    img.className = "photo";
+    img.src = memory.src;
+    img.alt = memory.caption || "A favorite memory";
+    img.loading = "lazy";
+    img.onerror = () => {
+      const placeholder = makePlaceholder();
+      img.replaceWith(placeholder);
+    };
+    card.appendChild(img);
+  } else {
+    card.appendChild(makePlaceholder());
+  }
+  const caption = document.createElement("div");
+  caption.className = "caption";
+  caption.textContent = memory.caption;
+  const tag = document.createElement("div");
+  tag.className = "memory-tag";
+  tag.textContent = "a memory to keep";
+  card.append(caption, tag);
+  gallery.appendChild(card);
+});
+function makePlaceholder() {
+  const el = document.createElement("div");
+  el.className = "photo-placeholder";
+  el.textContent = "♡";
+  return el;
 }
-});
-});
 
-document.querySelectorAll(".hidden").forEach(el=>{
-observer.observe(el);
+if (videoPath) {
+  const video = document.createElement("video");
+  video.src = videoPath;
+  video.controls = true;
+  video.playsInline = true;
+  video.preload = "metadata";
+  const stage = document.getElementById("videoStage");
+  stage.textContent = "";
+  stage.style.display = "block";
+  stage.appendChild(video);
+}
+let song;
+if (songPath) {
+  song = new Audio(songPath);
+  song.loop = true;
+}
+document.getElementById("musicBtn").addEventListener("click", async () => {
+  const btn = document.getElementById("musicBtn");
+  if (!songPath) {
+    showToast("Add your MP3 path in index.html first ♡");
+    return;
+  }
+  try {
+    if (song.paused) {
+      await song.play();
+      btn.textContent = "Ⅱ Pause our song";
+      btn.setAttribute("aria-pressed", "true");
+    } else {
+      song.pause();
+      btn.textContent = "♫geet yeta bata bajau"; 
+      btn.setAttribute("aria-pressed", "false");
+    }
+  } catch (e) {
+    showToast("Couldn't play that audio file. Check the filename.");
+  }
 });
-
+document.getElementById("openBtn").addEventListener("click", () => {
+  document.getElementById("hero").style.display = "none";
+  document.getElementById("content").style.display = "block";
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+document.getElementById("letterBtn").addEventListener("click", () => {
+  const letter = document.getElementById("letterText");
+  letter.classList.toggle("show");
+  document.querySelector("#letterBtn span").textContent =
+    letter.classList.contains("show") ? "your letter is open ♡" : "tap to open ♡";
+  if (letter.classList.contains("show")) letter.scrollIntoView({behavior:"smooth",block:"center"});
+});
+document.getElementById("copyLetterBtn").addEventListener("click", async () => {
+  const letter = document.getElementById("letterText").innerText;
+  try {
+    await navigator.clipboard.writeText(letter);
+    showToast("Letter copied ♡");
+  } catch (e) {
+    showToast("Select the letter text and copy it manually.");
+  }
+});
+document.getElementById("againBtn").addEventListener("click", () => {
+  if (song && !song.paused) song.pause();
+  document.getElementById("musicBtn").textContent = "♫ Play our song";
+  document.getElementById("musicBtn").setAttribute("aria-pressed","false");
+  document.getElementById("content").style.display = "none";
+  document.getElementById("hero").style.display = "grid";
+  window.scrollTo({top:0,behavior:"smooth"});
+});
+let toastTimer;
+function showToast(message) {
+  const toast = document.getElementById("toast");
+  toast.textContent = message;
+  toast.style.display = "block";
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.style.display = "none", 2600);
+}
 </script>
-
 </body>
 </html>
